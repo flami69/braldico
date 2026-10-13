@@ -199,6 +199,12 @@ h3 { font-weight: 800; }
 .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--gold); }
 .contact-form .form-note { color: var(--muted); font-size: .85rem; margin: 0; }
 
+.contact-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+.map {
+  display: block; width: 100%; height: 240px; margin-top: 24px; border: 0;
+  border-radius: var(--radius); outline: 2px solid var(--gold); outline-offset: 4px;
+}
+
 /* Footer */
 .footer { background: var(--choco-900); color: #c9ab86; padding: 30px 0; font-size: .92rem; border-top: 2px solid var(--gold-dark); }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }

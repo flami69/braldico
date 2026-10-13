@@ -20,7 +20,7 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
   const data = new FormData(e.target);
   const subject = encodeURIComponent(`Mesaj de la ${data.get("nume")} — braldico`);
   const body = encodeURIComponent(`${data.get("mesaj")}\n\n— ${data.get("nume")} (${data.get("contact")})`);
-  window.location.href = `mailto:contact@braldico.ro?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:office@braldico.ro?subject=${subject}&body=${body}`;
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();

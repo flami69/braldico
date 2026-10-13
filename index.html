@@ -11,6 +11,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Braldico",
+    "description": "Brutărie, patiserie, cofetărie — cu dragoste și pricepere, din 1997.",
+    "telephone": "+40722498939",
+    "email": "office@braldico.ro",
+    "foundingDate": "1997",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Strada Principală 300",
+      "addressLocality": "Tărlungeni",
+      "addressCountry": "RO"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }]
+  }
+  </script>
 </head>
 <body>
   <header class="header" id="top">
@@ -136,11 +159,16 @@
           <h2>Te așteptăm cu ceva bun</h2>
           <p>Pentru comenzi sau întrebări, scrie-ne sau sună-ne. Îți răspundem cât de repede putem.</p>
           <ul class="contact-list">
-            <li><strong>Telefon</strong><a href="tel:+40700000000">+40 700 000 000</a></li>
-            <li><strong>Email</strong><a href="mailto:contact@braldico.ro">contact@braldico.ro</a></li>
-            <li><strong>Adresă</strong><span>Str. Exemplu nr. 1, Oraș, România</span></li>
-            <li><strong>Program</strong><span>Luni – Sâmbătă 07:00 – 20:00<br>Duminică 08:00 – 14:00</span></li>
+            <li><strong>Telefon</strong><a href="tel:+40722498939">+40 722 498 939</a></li>
+            <li><strong>Email</strong><a href="mailto:office@braldico.ro">office@braldico.ro</a></li>
+            <li><strong>Adresă</strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Strada+Principala+300,+Tarlungeni,+Romania" target="_blank" rel="noopener">Strada Principală 300, Tărlungeni, România</a></li>
+            <li><strong>Program</strong><span>Luni – Vineri: 08:00 – 17:00<br>Sâmbătă – Duminică: închis</span></li>
           </ul>
+          <div class="contact-actions">
+            <a href="tel:+40722498939" class="btn">Sună acum</a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Strada+Principala+300,+Tarlungeni,+Romania" target="_blank" rel="noopener" class="btn btn-ghost">Vezi pe hartă</a>
+          </div>
+          <iframe class="map" title="Hartă Braldico — Strada Principală 300, Tărlungeni" src="https://www.google.com/maps?q=Strada+Principala+300,+Tarlungeni,+Romania&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <form class="contact-form" id="contact-form">
           <h3>Trimite-ne un mesaj</h3>
