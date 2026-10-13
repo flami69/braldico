@@ -31,7 +31,7 @@ img, svg { display: block; max-width: 100%; }
 
 .container { width: min(1140px, 100% - 32px); margin-inline: auto; }
 
-h1, h2, .brand span {
+h1, h2 {
   font-family: var(--script);
   font-weight: 400;
   letter-spacing: .01em;
@@ -49,7 +49,7 @@ h3 { font-weight: 800; }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
 .brand { display: flex; align-items: center; gap: 12px; }
 .brand img { width: 44px; height: 44px; }
-.brand span { font-size: 1.7rem; color: var(--cream-text); text-shadow: 0 2px 0 var(--gold-dark); }
+.brand .wordmark { width: auto; height: 36px; filter: drop-shadow(0 3px 0 var(--choco-900)); }
 .nav-links { display: flex; align-items: center; gap: 30px; font-weight: 700; }
 .nav-links a:not(.btn):hover { color: var(--gold-light); }
 .nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 8px; }
@@ -203,7 +203,7 @@ h3 { font-weight: 800; }
 .footer { background: var(--choco-900); color: #c9ab86; padding: 30px 0; font-size: .92rem; border-top: 2px solid var(--gold-dark); }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
 .brand-footer img { width: 40px; height: 40px; }
-.brand-footer span { font-size: 1.5rem; }
+.brand-footer .wordmark { width: auto; height: 30px; }
 
 /* Responsive */
 @media (max-width: 920px) {
