@@ -7,7 +7,9 @@ Site de prezentare pentru Braldico (brutărie, patiserie, cofetărie — din 199
 - `index.html` — conținutul paginii
 - `styles.css` — stiluri
 - `script.js` — meniu mobil și formular de contact
-- `assets/` — logo și favicon
+- `consent.js` — banner cookie (Google Maps se încarcă doar cu acord)
+- `termeni-si-conditii.html`, `politica-de-confidentialitate.html`, `politica-cookies.html` — pagini legale
+- `assets/` — logo, favicon și fonturi găzduite local
 
 ## Rulare locală
 

@@ -1,3 +1,17 @@
+/* Fonturi găzduite local (fără transfer de date către Google) */
+@font-face { font-family: "Lobster"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(assets/fonts/lobster-latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Lobster"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(assets/fonts/lobster-latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Nunito"; font-style: normal; font-weight: 400 800; font-display: swap;
+  src: url(assets/fonts/nunito-latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Nunito"; font-style: normal; font-weight: 400 800; font-display: swap;
+  src: url(assets/fonts/nunito-latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
 :root {
   /* Culori preluate din logo */
   --choco-900: #2a1209;
@@ -248,10 +262,73 @@ h3 { font-weight: 800; }
 }
 
 /* Footer */
-.footer { background: var(--choco-900); color: #c9ab86; padding: 30px 0; font-size: .92rem; border-top: 2px solid var(--gold-dark); }
-.footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+.footer { background: var(--choco-900); color: #c9ab86; padding: 56px 0 0; font-size: .92rem; border-top: 2px solid var(--gold-dark); }
+.footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1.2fr 1fr; gap: 36px; }
+.footer h4 { color: var(--gold); text-transform: uppercase; letter-spacing: .12em; font-size: .78rem; margin-bottom: 14px; }
+.footer p { margin-top: 14px; }
+.footer-links { list-style: none; display: grid; gap: 8px; }
+.footer a:hover { color: var(--cream-text); }
+.footer-links a { border-bottom: 1px solid rgba(214, 161, 92, .3); }
 .brand-footer img { width: 40px; height: 40px; }
 .brand-footer .wordmark { width: auto; height: 30px; }
+.anpc-badge {
+  display: flex; align-items: center; gap: 12px; width: 250px; max-width: 100%; height: 50px; padding: 0 14px;
+  background: var(--cream); color: var(--choco-800); border-radius: 8px; border: 2px solid var(--gold);
+}
+.anpc-badge strong { font-size: 1.1rem; font-weight: 800; padding-right: 12px; border-right: 2px solid var(--gold); }
+.anpc-badge span { font-size: .75rem; line-height: 1.25; font-weight: 700; }
+.footer .anpc-badge:hover { color: var(--choco-600); background: #fff; }
+.anpc-note { font-size: .82rem; }
+.footer-bottom { margin-top: 40px; padding: 18px 0; border-top: 1px solid rgba(214, 161, 92, .2); text-align: center; }
+.footer-bottom p { margin: 0; }
+
+/* Map placeholder (încărcată doar cu acord) */
+.map-placeholder {
+  display: grid; place-content: center; justify-items: center; gap: 12px; text-align: center; padding: 24px;
+  background: repeating-linear-gradient(45deg, rgba(214,161,92,.08) 0 12px, transparent 12px 24px), var(--choco-700);
+}
+.map-placeholder p { margin: 0; font-size: .92rem; max-width: 380px; }
+.map-placeholder a { color: var(--gold-light); font-size: .88rem; border-bottom: 1px solid; }
+.form-note a { color: var(--choco-600); border-bottom: 1px solid var(--gold); }
+
+/* Cookie banner */
+.cookie-banner {
+  position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 100;
+  max-width: 640px; margin-inline: auto;
+  background: var(--cream); color: var(--text); border-radius: var(--radius);
+  border: 2px solid var(--gold); box-shadow: 0 20px 50px rgba(0,0,0,.35);
+}
+.cookie-banner[hidden] { display: none; }
+.cookie-inner { padding: 24px; max-height: calc(100vh - 32px); overflow: auto; }
+.cookie-banner h2 { font-family: var(--script); font-weight: 400; font-size: 1.6rem; color: var(--choco-700); margin-bottom: 8px; }
+.cookie-banner p { font-size: .92rem; color: var(--muted); margin-bottom: 14px; }
+.cookie-banner a { color: var(--choco-600); font-weight: 700; border-bottom: 1px solid var(--gold); }
+.cookie-prefs { display: grid; gap: 10px; margin-bottom: 16px; }
+.cookie-prefs[hidden] { display: none; }
+.cookie-opt { display: flex; gap: 12px; align-items: flex-start; font-size: .9rem; padding: 12px; background: #fff; border-radius: 12px; border: 1px solid var(--cream-200); cursor: pointer; }
+.cookie-opt input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--choco-600); flex: none; }
+.cookie-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.cookie-actions .btn { flex: 1 1 auto; }
+.cookie-actions [hidden] { display: none; }
+.btn-outline { background: transparent; color: var(--choco-700); border-color: var(--choco-600); }
+.btn-outline:hover { background: var(--cream-200); border-color: var(--choco-700); }
+
+/* Legal pages */
+.legal-hero { background: linear-gradient(160deg, var(--choco-900), var(--choco-700)); color: var(--cream-text); padding: 64px 0 56px; }
+.legal-hero .eyebrow { color: var(--gold); }
+.legal-hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.15; }
+.legal-updated { color: #e3cfae; margin-top: 10px; font-size: .95rem; }
+.legal-body { max-width: 820px; padding: 56px 0 90px; }
+.legal-body h2 { font-family: "Nunito", sans-serif; font-weight: 800; font-size: 1.3rem; color: var(--choco-700); margin: 36px 0 12px; }
+.legal-body p, .legal-body li { color: var(--muted); margin-bottom: 12px; }
+.legal-body ul { padding-left: 22px; margin-bottom: 14px; }
+.legal-body a { color: var(--choco-600); font-weight: 700; border-bottom: 1px solid var(--gold); }
+.legal-body .btn { color: var(--choco-900); border-bottom: 2px solid var(--gold); }
+.legal-body code { background: var(--cream-200); padding: 1px 6px; border-radius: 6px; font-size: .88em; }
+.table-wrap { overflow-x: auto; margin: 16px 0 20px; }
+.legal-body table { width: 100%; border-collapse: collapse; font-size: .92rem; min-width: 560px; }
+.legal-body th, .legal-body td { text-align: left; padding: 12px; border-bottom: 1px solid var(--cream-200); vertical-align: top; color: var(--muted); }
+.legal-body th { background: var(--choco-800); color: var(--cream-text); font-weight: 700; }
 
 /* Responsive */
 @media (max-width: 920px) {
@@ -262,6 +339,7 @@ h3 { font-weight: 800; }
   .hero-actions { justify-content: center; }
   .cards, .steps { grid-template-columns: 1fr; }
   .stores { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
   .split { grid-template-columns: 1fr; gap: 40px; }
   .badges-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .badges-grid div + div { border-left: 0; }
@@ -280,7 +358,7 @@ h3 { font-weight: 800; }
   .section { padding: 76px 0; }
   .contact-list li { grid-template-columns: 1fr; gap: 2px; }
   .stores { grid-template-columns: 1fr; }
-  .footer-inner { flex-direction: column; text-align: center; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-logo img { animation: none; }

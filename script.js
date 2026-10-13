@@ -15,7 +15,7 @@ links.querySelectorAll("a").forEach((a) =>
 );
 
 // Contact form: opens the visitor's email client (no server needed)
-document.getElementById("contact-form").addEventListener("submit", (e) => {
+document.getElementById("contact-form")?.addEventListener("submit", (e) => {
   e.preventDefault();
   const data = new FormData(e.target);
   const subject = encodeURIComponent(`Mesaj de la ${data.get("nume")} — braldico`);
