@@ -18,8 +18,8 @@ links.querySelectorAll("a").forEach((a) =>
 document.getElementById("contact-form").addEventListener("submit", (e) => {
   e.preventDefault();
   const data = new FormData(e.target);
-  const subject = encodeURIComponent(`Mesaj de la ${data.get("nume")}`);
-  const body = encodeURIComponent(`${data.get("mesaj")}\n\n— ${data.get("nume")} (${data.get("email")})`);
+  const subject = encodeURIComponent(`Mesaj de la ${data.get("nume")} — braldico`);
+  const body = encodeURIComponent(`${data.get("mesaj")}\n\n— ${data.get("nume")} (${data.get("contact")})`);
   window.location.href = `mailto:contact@braldico.ro?subject=${subject}&body=${body}`;
 });
 

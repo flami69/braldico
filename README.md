@@ -1,12 +1,13 @@
 # Braldico
 
-Site de prezentare pentru Braldico — HTML, CSS și JavaScript simplu, fără dependențe.
+Site de prezentare pentru Braldico (brutărie, patiserie, cofetărie — din 1997) — HTML, CSS și JavaScript simplu, fără dependențe.
 
 ## Structură
 
 - `index.html` — conținutul paginii
 - `styles.css` — stiluri
 - `script.js` — meniu mobil și formular de contact
+- `assets/` — logo și favicon
 
 ## Rulare locală
 
