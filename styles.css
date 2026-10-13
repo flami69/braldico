@@ -196,6 +196,15 @@ h3 { font-weight: 800; }
 .store-pin svg { width: 28px; height: 28px; fill: none; stroke: var(--choco-900); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .store h3 { font-size: 1.15rem; color: var(--choco-700); margin-bottom: 8px; }
 .store address { font-style: normal; color: var(--muted); margin-bottom: 18px; flex: 1; }
+.store address { flex: 0; margin-bottom: 14px; }
+.store-hours {
+  list-style: none; font-size: .92rem; color: var(--muted); margin-bottom: 12px; flex: 1;
+  padding-top: 12px; border-top: 1px dashed var(--gold-light); width: 100%;
+}
+.store-main .store-hours { color: #e3cfae; border-top-color: rgba(214, 161, 92, .4); }
+.store-phone { font-weight: 800; color: var(--choco-600); margin-bottom: 14px; }
+.store-main .store-phone { color: var(--cream-text); }
+.store-phone:hover { color: var(--gold-dark); }
 .store-link { font-weight: 800; color: var(--gold-dark); border-bottom: 2px solid var(--gold-light); }
 .store-main .store-link { color: var(--gold); }
 .store-link:hover { color: var(--choco-600); }

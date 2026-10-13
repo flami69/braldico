@@ -12,33 +12,143 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Bakery",
-    "name": "Braldico",
-    "description": "Brutărie, patiserie, cofetărie — cu dragoste și pricepere, din 1997.",
-    "telephone": "+40722498939",
-    "email": "office@braldico.ro",
-    "foundingDate": "1997",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Strada Principală 300",
-      "addressLocality": "Tărlungeni",
-      "addressRegion": "Județul Brașov",
-      "addressCountry": "RO"
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Braldico",
+  "description": "Brutărie, patiserie, cofetărie — cu dragoste și pricepere, din 1997.",
+  "telephone": "+40722498939",
+  "email": "office@braldico.ro",
+  "foundingDate": "1997",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Strada Principală 300",
+    "addressLocality": "Tărlungeni",
+    "addressRegion": "Județul Brașov",
+    "addressCountry": "RO"
+  },
+  "department": [
+    {
+      "@type": "Bakery",
+      "name": "Braldico — Magazin Privighetorii",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bloc D16, Strada Privighetorii 3",
+        "postalCode": "500270",
+        "addressLocality": "Brașov",
+        "addressRegion": "Județul Brașov",
+        "addressCountry": "RO"
+      },
+      "telephone": "+40368007366",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "07:30",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ]
     },
-    "department": [
-      { "@type": "Bakery", "name": "Braldico — Magazin Privighetorii", "address": { "@type": "PostalAddress", "streetAddress": "Bloc D16, Strada Privighetorii 3", "postalCode": "500270", "addressLocality": "Brașov", "addressRegion": "Județul Brașov", "addressCountry": "RO" } },
-      { "@type": "Bakery", "name": "Braldico — Magazin Graurului", "address": { "@type": "PostalAddress", "streetAddress": "Strada Graurului 15", "postalCode": "507075", "addressLocality": "Brașov", "addressRegion": "Județul Brașov", "addressCountry": "RO" } },
-      { "@type": "Bakery", "name": "Braldico — Magazin Olteț", "address": { "@type": "PostalAddress", "streetAddress": "Str. Olteț 13", "postalCode": "500152", "addressLocality": "Brașov", "addressRegion": "Județul Brașov", "addressCountry": "RO" } }
-    ],
-    "openingHoursSpecification": [{
+    {
+      "@type": "Bakery",
+      "name": "Braldico — Magazin Graurului",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Strada Graurului 15",
+        "postalCode": "507075",
+        "addressLocality": "Brașov",
+        "addressRegion": "Județul Brașov",
+        "addressCountry": "RO"
+      },
+      "telephone": "+40368803969",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "07:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      ]
+    },
+    {
+      "@type": "Bakery",
+      "name": "Braldico — Magazin Olteț",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Str. Olteț 13",
+        "postalCode": "500152",
+        "addressLocality": "Brașov",
+        "addressRegion": "Județul Brașov",
+        "addressCountry": "RO"
+      },
+      "telephone": "+40722498939",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "16:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "14:00"
+        }
+      ]
+    }
+  ],
+  "openingHoursSpecification": [
+    {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
       "opens": "08:00",
       "closes": "17:00"
-    }]
-  }
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -199,6 +309,11 @@
             <p class="card-kicker">Tărlungeni</p>
             <h3>Sediul principal & brutăria</h3>
             <address>Strada Principală 300<br>Tărlungeni, Județul Brașov</address>
+            <ul class="store-hours">
+              <li>Luni – Vineri: 08:00 – 17:00</li>
+              <li>Sâmbătă – Duminică: închis</li>
+            </ul>
+            <a href="tel:+40722498939" class="store-phone">0722 498 939</a>
             <a href="https://www.google.com/maps/search/?api=1&amp;query=Strada+Principala+300%2C+Tarlungeni%2C+Judetul+Brasov%2C+Romania" target="_blank" rel="noopener" class="store-link">Vezi pe hartă →</a>
           </article>
           <article class="store">
@@ -206,6 +321,12 @@
             <p class="card-kicker">Brașov</p>
             <h3>Magazin Privighetorii</h3>
             <address>Bloc D16, Strada Privighetorii 3<br>500270 Brașov</address>
+            <ul class="store-hours">
+              <li>Luni – Vineri: 07:30 – 20:00</li>
+              <li>Sâmbătă: 08:00 – 18:00</li>
+              <li>Duminică: închis</li>
+            </ul>
+            <a href="tel:+40368007366" class="store-phone">0368 007 366</a>
             <a href="https://www.google.com/maps/search/?api=1&amp;query=Bloc+D16%2C+Strada+Privighetorii+3%2C+500270+Brasov%2C+Romania" target="_blank" rel="noopener" class="store-link">Vezi pe hartă →</a>
           </article>
           <article class="store">
@@ -213,6 +334,12 @@
             <p class="card-kicker">Brașov</p>
             <h3>Magazin Graurului</h3>
             <address>Strada Graurului 15<br>507075 Brașov</address>
+            <ul class="store-hours">
+              <li>Luni – Vineri: 07:00 – 20:00</li>
+              <li>Sâmbătă: 09:00 – 19:00</li>
+              <li>Duminică: închis</li>
+            </ul>
+            <a href="tel:+40368803969" class="store-phone">0368 803 969</a>
             <a href="https://www.google.com/maps/search/?api=1&amp;query=Strada+Graurului+15%2C+507075+Brasov%2C+Romania" target="_blank" rel="noopener" class="store-link">Vezi pe hartă →</a>
           </article>
           <article class="store">
@@ -220,6 +347,12 @@
             <p class="card-kicker">Brașov</p>
             <h3>Magazin Olteț</h3>
             <address>Str. Olteț 13<br>500152 Brașov</address>
+            <ul class="store-hours">
+              <li>Luni – Vineri: 08:00 – 16:00</li>
+              <li>Sâmbătă: 08:00 – 14:00</li>
+              <li>Duminică: închis</li>
+            </ul>
+            <a href="tel:+40722498939" class="store-phone">0722 498 939</a>
             <a href="https://www.google.com/maps/search/?api=1&amp;query=Strada+Oltet+13%2C+500152+Brasov%2C+Romania" target="_blank" rel="noopener" class="store-link">Vezi pe hartă →</a>
           </article>
         </div>
