@@ -1,7 +1,13 @@
 // Cookie consent (Legea 506/2004, GDPR). Choice is kept in localStorage,
-// which is strictly necessary to remember it. Google Maps loads only with consent.
+// which is strictly necessary to remember it. Google Maps and Google Analytics
+// load only with consent.
+
+// Google Analytics 4 — paste your Measurement ID here (e.g. "G-XXXXXXXXXX").
+// While empty, Analytics never loads.
+const GA_MEASUREMENT_ID = "";
+
 (() => {
-  const KEY = "braldico-consent-v1";
+  const KEY = "braldico-consent-v2";
   const MAX_AGE = 1000 * 60 * 60 * 24 * 180; // re-ask after 6 months
 
   const read = () => {
@@ -11,14 +17,61 @@
     } catch (e) {}
     return null;
   };
-  const save = (maps) => {
+  const save = (maps, analytics) => {
     const prev = read();
-    const c = { maps, date: Date.now() };
+    const c = { maps, analytics, date: Date.now() };
     try { localStorage.setItem(KEY, JSON.stringify(c)); } catch (e) {}
     hide();
-    if (maps) loadMaps();
-    else if (prev && prev.maps) location.reload(); // remove already-loaded maps
+    apply(c);
+    const withdrawn = prev && ((prev.maps && !maps) || (prev.analytics && !analytics));
+    if (withdrawn) { deleteGaCookies(); location.reload(); }
   };
+
+  function apply(c) {
+    if (c.maps) loadMaps();
+    if (c.analytics) loadAnalytics();
+  }
+
+  // ---- Google Analytics (GA4) ----
+  let gaLoaded = false;
+  function loadAnalytics() {
+    if (gaLoaded || !GA_MEASUREMENT_ID) return;
+    gaLoaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag("consent", "default", {
+      analytics_storage: "granted",
+      ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied",
+    });
+    gtag("js", new Date());
+    gtag("config", GA_MEASUREMENT_ID);
+    const s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_MEASUREMENT_ID;
+    document.head.appendChild(s);
+  }
+  const track = (name, params) => { if (gaLoaded) gtag("event", name, params); };
+
+  function deleteGaCookies() {
+    const host = location.hostname;
+    const domains = ["", host, "." + host, "." + host.split(".").slice(-2).join(".")];
+    document.cookie.split(";").map((x) => x.split("=")[0].trim())
+      .filter((n) => n.startsWith("_ga") || n === "_gid")
+      .forEach((n) => domains.forEach((d) => {
+        document.cookie = `${n}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/${d ? "; domain=" + d : ""}`;
+      }));
+  }
+
+  // Useful events for a bakery: calls, emails, directions, contact form
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest("a");
+    if (!a) return;
+    const href = a.getAttribute("href") || "";
+    if (href.startsWith("tel:")) track("click_telefon", { numar: href.slice(4) });
+    else if (href.startsWith("mailto:")) track("click_email", {});
+    else if (href.includes("google.com/maps")) track("click_harta", { locatie: a.closest(".store")?.querySelector("h3")?.textContent || "contact" });
+  });
+  document.getElementById("contact-form")?.addEventListener("submit", () => track("trimitere_formular", {}));
 
   function loadMaps() {
     document.querySelectorAll("[data-map-src]").forEach((box) => {
@@ -40,11 +93,15 @@
   banner.innerHTML = `
     <div class="cookie-inner">
       <h2>Folosim cookie-uri</h2>
-      <p>Folosim doar ce este strict necesar pentru funcționarea site-ului. Cu acordul tău, afișăm și harta Google Maps, care poate seta cookie-uri proprii. Detalii în <a href="politica-cookies.html">Politica de cookie-uri</a> și <a href="politica-de-confidentialitate.html">Politica de confidențialitate</a>.</p>
+      <p>Folosim cookie-uri strict necesare pentru funcționarea site-ului. Cu acordul tău, folosim și Google Analytics, ca să înțelegem cum este folosit site-ul, și afișăm harta Google Maps. Detalii în <a href="politica-cookies.html">Politica de cookie-uri</a> și <a href="politica-de-confidentialitate.html">Politica de confidențialitate</a>.</p>
       <div class="cookie-prefs" hidden>
         <label class="cookie-opt">
           <input type="checkbox" checked disabled>
           <span><strong>Strict necesare</strong> — memorează alegerea ta privind cookie-urile. Mereu active.</span>
+        </label>
+        <label class="cookie-opt">
+          <input type="checkbox" id="cookie-analytics">
+          <span><strong>Statistici (Google Analytics)</strong> — ne ajută să vedem câte persoane vizitează site-ul și ce pagini sunt utile, prin date agregate. Google setează cookie-uri și preia adresa IP.</span>
         </label>
         <label class="cookie-opt">
           <input type="checkbox" id="cookie-maps">
@@ -61,11 +118,13 @@
 
   const prefs = banner.querySelector(".cookie-prefs");
   const mapsBox = banner.querySelector("#cookie-maps");
+  const gaBox = banner.querySelector("#cookie-analytics");
   const btn = (k) => banner.querySelector(`[data-c="${k}"]`);
 
   function show(withPrefs) {
     const c = read();
     mapsBox.checked = !!(c && c.maps);
+    gaBox.checked = !!(c && c.analytics);
     prefs.hidden = !withPrefs;
     btn("save").hidden = !withPrefs;
     btn("custom").hidden = withPrefs;
@@ -73,18 +132,18 @@
   }
   function hide() { banner.hidden = true; }
 
-  btn("all").onclick = () => save(true);
-  btn("none").onclick = () => save(false);
+  btn("all").onclick = () => save(true, true);
+  btn("none").onclick = () => save(false, false);
   btn("custom").onclick = () => show(true);
-  btn("save").onclick = () => save(mapsBox.checked);
+  btn("save").onclick = () => save(mapsBox.checked, gaBox.checked);
 
   document.addEventListener("click", (e) => {
     if (e.target.closest("[data-cookie-settings]")) { e.preventDefault(); show(true); }
-    if (e.target.closest("[data-load-map]")) save(true);
+    if (e.target.closest("[data-load-map]")) { const c = read(); save(true, !!(c && c.analytics)); }
   });
 
   document.body.appendChild(banner);
   const c = read();
   if (!c) show(false);
-  else if (c.maps) loadMaps();
+  else apply(c);
 })();
