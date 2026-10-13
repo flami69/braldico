@@ -168,6 +168,15 @@ h3 { font-weight: 800; }
 .card-kicker { text-transform: uppercase; letter-spacing: .16em; font-size: .78rem; font-weight: 800; color: var(--gold-dark) !important; margin-bottom: 4px !important; }
 .card h3 { margin-bottom: 10px; font-size: 1.3rem; color: var(--choco-700); }
 
+/* Candy Bar */
+.chips { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 30px; }
+.chips li {
+  padding: 8px 18px; border-radius: 999px; font-weight: 800; font-size: .95rem;
+  background: var(--cream); color: var(--choco-700); border: 2px solid var(--gold);
+}
+.inline-link { color: var(--choco-600); font-weight: 800; border-bottom: 2px solid var(--gold); }
+.inline-link:hover { color: var(--gold-dark); }
+
 /* Steps */
 .steps { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin: 44px 0 40px; counter-reset: none; }
 .steps li { background: #fff; border-radius: var(--radius); padding: 32px; border: 2px dashed var(--gold-light); }
@@ -229,7 +238,7 @@ h3 { font-weight: 800; }
     position: absolute; top: 72px; left: 0; right: 0; flex-direction: column; gap: 0;
     background: var(--choco-900); max-height: 0; overflow: hidden; transition: max-height .3s;
   }
-  .nav-links.open { max-height: 340px; border-bottom: 2px solid var(--gold-dark); }
+  .nav-links.open { max-height: 420px; border-bottom: 2px solid var(--gold-dark); }
   .nav-links a { padding: 14px 0; }
   .nav-links .btn { margin-bottom: 18px; }
   .hero { padding: 60px 0 100px; }
