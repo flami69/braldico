@@ -121,6 +121,11 @@ h3 { font-weight: 800; }
   font-size: clamp(2.5rem, 5.4vw, 4.3rem); line-height: 1.12; margin-bottom: 22px;
   color: var(--cream-text); text-shadow: 0 4px 0 var(--choco-900), 0 0 0 transparent;
 }
+.motto {
+  display: flex; align-items: center; gap: 14px; margin: -6px 0 22px;
+  font-family: var(--script); font-size: clamp(1.25rem, 2.4vw, 1.6rem); color: var(--gold);
+}
+.motto::before, .motto::after { content: ""; height: 2px; flex: 0 0 40px; background: var(--gold); border-radius: 2px; opacity: .7; }
 .lead { font-size: 1.18rem; max-width: 560px; color: #ead9bd; margin-bottom: 34px; }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 .hero-logo { display: grid; place-items: center; }
@@ -336,6 +341,7 @@ h3 { font-weight: 800; }
   .hero-logo { order: -1; }
   .hero-logo img { width: min(280px, 75%); }
   .lead { margin-inline: auto; }
+  .motto { justify-content: center; }
   .hero-actions { justify-content: center; }
   .cards, .steps { grid-template-columns: 1fr; }
   .stores { grid-template-columns: repeat(2, 1fr); }
@@ -363,4 +369,7 @@ h3 { font-weight: 800; }
 @media (prefers-reduced-motion: reduce) {
   .hero-logo img { animation: none; }
   html { scroll-behavior: auto; }
+}
+@media (max-width: 480px) {
+  .motto::before, .motto::after { display: none; }
 }
