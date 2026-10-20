@@ -261,6 +261,8 @@ h3 { font-weight: 800; }
 .order-rules li { display: flex; align-items: center; gap: 12px; color: var(--choco-700); font-size: .98rem; }
 .order-rules svg { width: 28px; height: 28px; flex: none; color: var(--gold-dark); }
 
+.order-form-link { margin-top: 22px; }
+
 /* Product order buttons */
 .card { display: flex; flex-direction: column; }
 .card > p:last-of-type { flex: 1; }
