@@ -74,4 +74,46 @@ document.querySelectorAll(".quote-form").forEach((qf) =>
   })
 );
 
+// Newsletter: saves the email to Supabase (see supabase/schema.sql).
+// The publishable/anon key is meant to be public; the table only allows inserts.
+const SUPABASE_URL = "https://ecmerbkfcpwjeqjnmyqh.supabase.co";
+const SUPABASE_KEY = "sb_publishable_MWLLvvuFmTpfZTTowqobaQ_NT5p7ufX";
+
+const nl = document.getElementById("newsletter-form");
+if (nl) {
+  const status = nl.querySelector(".newsletter-status");
+  const button = nl.querySelector("button");
+  const show = (msg, ok) => {
+    status.textContent = msg;
+    status.className = `newsletter-status ${ok ? "ok" : "error"}`;
+  };
+
+  nl.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const email = nl.elements.email.value.trim();
+    if (nl.elements.website.value) return; // honeypot: bots fill hidden fields
+    if (!nl.elements.email.checkValidity() || !email) return show("Introdu o adresă de e-mail validă.");
+    if (!nl.elements.consent.checked) return show("Bifează acordul pentru a te abona.");
+
+    button.disabled = true;
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/newsletter_subscribers`, {
+        method: "POST",
+        headers: { apikey: SUPABASE_KEY, "Content-Type": "application/json", Prefer: "return=minimal" },
+        body: JSON.stringify({ email, consent: true, source_page: location.pathname.split("/").pop() || "index.html" }),
+      });
+      if (res.ok || res.status === 409) {
+        show(res.ok ? "Mulțumim! Te-ai abonat cu succes." : "Această adresă este deja abonată.", true);
+        nl.reset();
+      } else {
+        throw new Error(res.status);
+      }
+    } catch {
+      show("Nu am putut salva adresa. Încearcă din nou sau scrie-ne la office@braldico.ro.");
+    } finally {
+      button.disabled = false;
+    }
+  });
+}
+
 document.getElementById("year").textContent = new Date().getFullYear();

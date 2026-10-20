@@ -282,6 +282,25 @@
         <p class="anpc-note"><a href="https://anpc.ro" target="_blank" rel="noopener">anpc.ro</a> · Telefonul consumatorului: 0219551</p>
       </div>
     </div>
+    <div class="container newsletter">
+      <div>
+        <h4>Newsletter</h4>
+        <p>Noutăți, produse de sezon și oferte, direct pe e-mail. Fără spam.</p>
+      </div>
+      <form class="newsletter-form" id="newsletter-form" novalidate>
+        <div class="newsletter-row">
+          <label class="sr-only" for="newsletter-email">Adresa de e-mail</label>
+          <input type="email" id="newsletter-email" name="email" placeholder="adresa@exemplu.ro" autocomplete="email" maxlength="254" required>
+          <button type="submit" class="btn btn-small">Abonează-te</button>
+        </div>
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="newsletter-consent">
+          <input type="checkbox" name="consent" required>
+          <span>Sunt de acord să primesc e-mailuri de la Braldico. Mă pot dezabona oricând. Detalii în <a href="politica-de-confidentialitate.html">Politica de confidențialitate</a>.</span>
+        </label>
+        <p class="newsletter-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
     <div class="container footer-bottom">
       <p>© <span id="year"></span> BRALDICO S.R.L. Toate drepturile rezervate.</p>
     </div>
