@@ -68,10 +68,12 @@ const GA_MEASUREMENT_ID = "";
     if (!a) return;
     const href = a.getAttribute("href") || "";
     if (href.startsWith("tel:")) track("click_telefon", { numar: href.slice(4) });
+    else if (href.includes("wa.me/")) track("click_whatsapp", { sectiune: a.closest("section, .mobile-cta")?.id || a.closest(".mobile-cta") && "bara_mobil" || "" });
     else if (href.startsWith("mailto:")) track("click_email", {});
     else if (href.includes("google.com/maps")) track("click_harta", { locatie: a.closest(".store")?.querySelector("h3")?.textContent || "contact" });
   });
-  document.getElementById("contact-form")?.addEventListener("submit", () => track("trimitere_formular", {}));
+  document.getElementById("contact-form")?.addEventListener("submit", (e) =>
+    track("trimitere_formular", { canal: e.submitter?.dataset.send || "whatsapp", tip: e.target.elements.tip?.value }));
 
   function loadMaps() {
     document.querySelectorAll("[data-map-src]").forEach((box) => {
