@@ -4,10 +4,11 @@ Site de prezentare pentru Braldico (brutărie, patiserie, cofetărie — din 199
 
 ## Structură
 
-- `index.html` — conținutul paginii
+- `index.html` — pagina principală (clienți persoane fizice)
+- `pentru-firme.html` — pagina pentru clienți firme (magazine, cantine, hoteluri, after-school-uri)
 - `styles.css` — stiluri
 - `script.js` — meniu mobil și formular de contact
-- `consent.js` — banner cookie (Google Maps se încarcă doar cu acord)
+- `consent.js` — banner cookie; Google Maps și Google Analytics se încarcă doar cu acord
 - `termeni-si-conditii.html`, `politica-de-confidentialitate.html`, `politica-cookies.html` — pagini legale
 - `assets/` — logo, favicon și fonturi găzduite local
 

@@ -264,7 +264,6 @@ h3 { font-weight: 800; }
 .order-form-link { margin-top: 22px; }
 
 /* Business customers (B2B) */
-.section-b2b { margin-top: 70px; }
 .b2b-head { max-width: 760px; }
 .b2b-clients { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 34px 0 50px; }
 .b2b-clients div {
@@ -292,6 +291,35 @@ h3 { font-weight: 800; }
 /* Keep grid columns and form fields within the screen width */
 .split > *, .form-row > *, .form-actions > * { min-width: 0; }
 .contact-form input, .contact-form select, .contact-form textarea { width: 100%; min-width: 0; }
+
+.hero-b2b-link {
+  display: inline-block; margin-top: 22px; font-weight: 700; font-size: .95rem; color: var(--gold-light);
+  border-bottom: 1px solid rgba(232, 196, 140, .5);
+}
+.hero-b2b-link:hover { color: var(--cream-text); border-color: var(--cream-text); }
+
+/* Homepage band pointing to the business page */
+.b2b-band { background: var(--choco-800); color: var(--cream-text); padding: 64px 0; border-top: 3px solid var(--gold-dark); border-bottom: 3px solid var(--gold-dark); }
+.b2b-band-inner { display: grid; grid-template-columns: 1.6fr auto; gap: 40px; align-items: center; }
+.b2b-band .eyebrow { color: var(--gold); }
+.b2b-band h2 { font-family: var(--script); font-weight: 400; font-size: clamp(1.8rem, 3.5vw, 2.5rem); line-height: 1.2; margin-bottom: 12px; }
+.b2b-band p { color: #e3cfae; }
+.chips-dark { margin: 18px 0 0; }
+.chips-dark li { background: transparent; color: var(--cream-text); border-color: rgba(214, 161, 92, .6); }
+.b2b-band-cta { display: grid; gap: 12px; justify-items: center; }
+.b2b-band-link { color: var(--gold-light); font-weight: 700; font-size: .92rem; border-bottom: 1px solid rgba(232, 196, 140, .5); }
+
+/* Business page */
+.hero-b2b { padding: 80px 0 110px; }
+.hero-b2b .lead { max-width: 720px; }
+.b2b-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 40px; max-width: 860px; }
+.b2b-stats div { padding: 16px 18px; border-radius: 14px; border: 1.5px solid rgba(214, 161, 92, .45); background: rgba(255, 255, 255, .04); }
+.b2b-stats strong { display: block; font-family: var(--script); font-weight: 400; font-size: 1.6rem; color: var(--gold-light); }
+.b2b-stats span { color: #e3cfae; font-size: .9rem; }
+.b2b-clients-light { margin-bottom: 0; }
+.b2b-clients-light div { background: #fff; border-color: var(--cream-200); color: var(--choco-700); }
+.b2b-clients-light svg { stroke: var(--gold-dark); }
+.nav-links a[aria-current="page"] { color: var(--gold); border-bottom: 2px solid var(--gold); }
 
 /* Product order buttons */
 .card { display: flex; flex-direction: column; }
@@ -448,6 +476,9 @@ h3 { font-weight: 800; }
   .steps.steps-4 { grid-template-columns: 1fr 1fr; }
   .stores { grid-template-columns: repeat(2, 1fr); }
   .b2b-clients { grid-template-columns: repeat(2, 1fr); }
+  .b2b-band-inner { grid-template-columns: 1fr; }
+  .b2b-band-cta { justify-items: start; }
+  .b2b-stats { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .split { grid-template-columns: minmax(0, 1fr); gap: 40px; }
   .badges-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
