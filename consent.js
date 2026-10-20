@@ -74,6 +74,8 @@ const GA_MEASUREMENT_ID = "";
   });
   document.getElementById("contact-form")?.addEventListener("submit", (e) =>
     track("trimitere_formular", { canal: e.submitter?.dataset.send || "whatsapp", tip: e.target.elements.tip?.value }));
+  document.getElementById("b2b-form")?.addEventListener("submit", (e) =>
+    track("cerere_oferta_firma", { canal: e.submitter?.dataset.send || "whatsapp", tip_afacere: e.target.elements.tip?.value }));
 
   function loadMaps() {
     document.querySelectorAll("[data-map-src]").forEach((box) => {

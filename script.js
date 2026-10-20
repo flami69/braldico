@@ -56,4 +56,22 @@ if (form) {
   });
 }
 
+// Business quote request: fields carry data-label; sent via WhatsApp or email
+document.querySelectorAll(".quote-form").forEach((qf) =>
+  qf.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const lines = [`Bună ziua! ${qf.dataset.title}:`];
+    qf.querySelectorAll("[data-label]").forEach((el) => {
+      if (el.value.trim()) lines.push(`${el.dataset.label}: ${el.value.trim()}`);
+    });
+    const text = lines.join("\n");
+    if (e.submitter?.dataset.send === "email") {
+      const subject = `${qf.dataset.title} — ${qf.elements.firma?.value || ""}`;
+      window.location.href = `mailto:office@braldico.ro?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
+    } else {
+      window.open(`https://wa.me/40722498939?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+    }
+  })
+);
+
 document.getElementById("year").textContent = new Date().getFullYear();

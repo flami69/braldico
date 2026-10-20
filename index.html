@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Braldico — Brutărie, Patiserie, Cofetărie</title>
-  <meta name="description" content="Braldico — brutărie, patiserie și cofetărie. Cu dragoste și pricepere, din 1997.">
+  <meta name="description" content="Braldico — producător de pâine, patiserie și cofetărie din Tărlungeni, din 1997. Livrăm zilnic către magazine, cantine, hoteluri și after-school-uri din județul Brașov. 4 magazine proprii în Tărlungeni și Brașov.">
   <meta name="theme-color" content="#3b1a0e">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -13,7 +13,11 @@
   "@context": "https://schema.org",
   "@type": "Bakery",
   "name": "Braldico",
-  "description": "Brutărie, patiserie, cofetărie — cu dragoste și pricepere, din 1997.",
+  "description": "Producător de pâine, patiserie și cofetărie din 1997. Livrare zilnică către firme din județul Brașov și zona Întorsura Buzăului.",
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Județul Brașov" },
+    { "@type": "City", "name": "Întorsura Buzăului" }
+  ],
   "telephone": "+40722498939",
   "email": "office@braldico.ro",
   "foundingDate": "1997",
@@ -154,6 +158,30 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "Livrați produse și către firme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da. Aprovizionăm zilnic magazine, cantine, hoteluri și after-school-uri cu pâine, patiserie și cofetărie din producția proprie. Completează cererea de ofertă pentru firme sau sună-ne la 0722 498 939."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "În ce zone livrați către firme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Livrăm în județul Brașov și în zona Întorsura Buzăului (județul Covasna), zilnic, de luni până sâmbătă, cu mașinile noastre."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Care este comanda minimă pentru firme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nu avem o comandă minimă fixă: cantitățile, frecvența livrărilor și condițiile se stabilesc împreună, în funcție de nevoile fiecărui partener."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Cum pot plasa o comandă?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -224,8 +252,8 @@
       </button>
       <nav class="nav-links">
         <a href="#despre">Despre noi</a>
+        <a href="#parteneri" class="nav-b2b">Pentru firme</a>
         <a href="#produse">Produse</a>
-        <a href="#candy-bar">Candy Bar</a>
         <a href="#magazine">Magazine</a>
         <a href="#intrebari">Întrebări</a>
         <a href="#cum-comanzi" class="btn btn-small">Comandă</a>
@@ -237,13 +265,13 @@
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <p class="eyebrow">Brutărie · Patiserie · Cofetărie</p>
-          <h1>Gustul copilăriei, copt proaspăt în fiecare zi</h1>
+          <p class="eyebrow">Producător de pâine, patiserie și cofetărie</p>
+          <h1>Pâine proaspătă, zi de zi, pentru firme și familii</h1>
           <p class="motto"><span>„Cu dragoste și pricepere, din 1997”</span></p>
-          <p class="lead">De peste un sfert de secol frământăm, coacem și decorăm cu aceeași grijă: ingrediente bune, rețete de familie și multă răbdare.</p>
+          <p class="lead">Producem zilnic aproximativ 4 tone de pâine în Tărlungeni și livrăm cu mașinile proprii către magazine, cantine, hoteluri și after-school-uri din județul Brașov. Ne găsești și în cele 4 magazine Braldico.</p>
           <div class="hero-actions">
-            <a href="#cum-comanzi" class="btn">Cum comanzi</a>
-            <a href="https://wa.me/40722498939?text=Bun%C4%83%20ziua%21%20A%C8%99%20dori%20s%C4%83%20plasez%20o%20comand%C4%83." target="_blank" rel="noopener" class="btn btn-ghost">Scrie-ne pe WhatsApp</a>
+            <a href="#parteneri" class="btn">Devino partener</a>
+            <a href="#cum-comanzi" class="btn btn-ghost">Comandă pentru acasă</a>
           </div>
         </div>
         <div class="hero-logo">
@@ -255,44 +283,76 @@
 
     <section class="badges">
       <div class="container badges-grid">
-        <div><strong>1997</strong><span>anul în care am început</span></div>
-        <div><strong>Zilnic</strong><span>copt proaspăt, de dimineață</span></div>
-        <div><strong>Natural</strong><span>ingrediente atent alese</span></div>
-        <div><strong>Tradițional</strong><span>rețete de familie</span></div>
+        <div><strong>~4 tone</strong><span>de pâine produse zilnic</span></div>
+        <div><strong>Din 1997</strong><span>producție proprie în Tărlungeni</span></div>
+        <div><strong>Luni – Sâmbătă</strong><span>livrare zilnică, cu mașini proprii</span></div>
+        <div><strong>ISO</strong><span>producție certificată</span></div>
       </div>
     </section>
 
-    <section id="cum-comanzi" class="section section-order">
+    <section id="parteneri" class="section section-dark section-b2b">
       <div class="container">
-        <p class="eyebrow center">Cum comanzi</p>
-        <h2 class="center">Ne suni, ne scrii sau treci pe la noi</h2>
-        <p class="center intro">Nu vindem online — preferăm să vorbim cu tine, ca fiecare comandă să iasă exact așa cum ți-o dorești. Alege varianta cea mai comodă:</p>
-        <div class="order-ways">
-          <a class="order-way" href="tel:+40722498939">
-            <span class="order-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></span>
-            <h3>Sună-ne</h3>
-            <strong>0722 498 939</strong>
-            <span class="order-sub">Luni – Vineri, 08:00 – 17:00, sau direct la <span class="u">magazinul cel mai apropiat</span></span>
-          </a>
-          <a class="order-way order-way-wa" href="https://wa.me/40722498939?text=Bun%C4%83%20ziua%21%20A%C8%99%20dori%20s%C4%83%20plasez%20o%20comand%C4%83." target="_blank" rel="noopener">
-            <span class="order-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12z"/><path d="M9 10h6M9 13.5h4"/></svg></span>
-            <h3>Scrie-ne pe WhatsApp</h3>
-            <strong>0722 498 939</strong>
-            <span class="order-sub">Trimite-ne și o poză cu tortul dorit</span>
-          </a>
-          <a class="order-way" href="#magazine">
-            <span class="order-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v10h16V10M3 10l2-6h14l2 6M3 10c0 1.7 1.3 3 3 3s3-1.3 3-3c0 1.7 1.3 3 3 3s3-1.3 3-3c0 1.7 1.3 3 3 3s3-1.3 3-3M10 20v-5h4v5"/></svg></span>
-            <h3>Vino în magazin</h3>
-            <strong>4 locații</strong>
-            <span class="order-sub">În Tărlungeni și Brașov — vezi adresele și programul</span>
-          </a>
+        <div class="b2b-head">
+          <p class="eyebrow">Pentru firme</p>
+          <h2>Pâinea zilnică a afacerii tale, livrată de noi</h2>
+          <p>Aprovizionăm în fiecare zi magazine, cantine, hoteluri și after-school-uri din județul Brașov și din zona Întorsura Buzăului, cu produse proaspete din producția proprie. Stabilim împreună produsele, cantitățile și programul de livrare potrivite afacerii tale.</p>
         </div>
-        <ul class="order-rules">
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span><strong>Torturile</strong> se comandă cu minimum <strong>2 zile</strong> înainte</span></li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M15 9.5c0-1.4-1.3-2-3-2s-3 .8-3 2.2c0 3 6 1.6 6 4.6 0 1.4-1.3 2.2-3 2.2s-3-.7-3-2"/></svg><span>Comanda se confirmă după plata unui <strong>avans</strong></span></li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><span><strong>Ridici din magazin</strong> sau <strong>îți livrăm</strong> comanda</span></li>
-        </ul>
-        <p class="center order-form-link">Preferi să ne trimiți detaliile în scris? <a href="#contact" class="inline-link">Completează cererea de ofertă</a></p>
+        <div class="b2b-clients">
+          <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v10h16V10M3 10l2-6h14l2 6M3 10c0 1.7 1.3 3 3 3s3-1.3 3-3c0 1.7 1.3 3 3 3s3-1.3 3-3c0 1.7 1.3 3 3 3s3-1.3 3-3"/></svg><span>Magazine</span></div>
+          <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-16 0zM2 11h20M9 7c0-2 2-2 2-4M14 7c0-2 2-2 2-4"/></svg><span>Cantine</span></div>
+          <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16M2 21h20M9 7h2M13 7h2M9 11h2M13 11h2M10 21v-4h4v4"/></svg><span>Hoteluri</span></div>
+          <div><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="6" r="3"/><path d="M6 21v-3a6 6 0 0 1 12 0v3M3 13l3-2M21 13l-3-2"/></svg><span>After-school-uri</span></div>
+        </div>
+        <div class="split b2b-split">
+          <div>
+            <h3 class="b2b-sub">De ce Braldico</h3>
+            <ul class="checklist b2b-list">
+              <li><strong>Producție proprie, la scară mare</strong> — aproximativ 4 tone de pâine pe zi, în Tărlungeni.</li>
+              <li><strong>Livrare zilnică, de luni până sâmbătă</strong>, cu mașinile noastre.</li>
+              <li><strong>Producție certificată ISO</strong> și standarde constante de calitate.</li>
+              <li><strong>Experiență din 1997</strong> în pâine, patiserie și cofetărie.</li>
+              <li><strong>Condiții adaptate fiecărui partener</strong> — cantități, frecvență și comandă minimă stabilite împreună.</li>
+            </ul>
+            <ul class="b2b-terms">
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg><span><strong>Zona de livrare</strong>Județul Brașov și Întorsura Buzăului (jud. Covasna)</span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><span><strong>Livrare</strong>Zilnic, luni – sâmbătă, cu mașini proprii</span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l4-4 4 3 4-3 4 4-8 7z"/><path d="M8 8l4 3"/></svg><span><strong>Condiții</strong>Stabilite împreună, în funcție de nevoile tale</span></li>
+            </ul>
+            <div class="contact-actions">
+              <a href="tel:+40722498939" class="btn">Sună: 0722 498 939</a>
+              <a href="https://wa.me/40722498939?text=Bun%C4%83%20ziua%21%20Reprezint%20o%20firm%C4%83%20%C8%99i%20a%C8%99%20dori%20o%20ofert%C4%83%20pentru%20livrare%20de%20produse%20Braldico." target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp</a>
+            </div>
+          </div>
+          <form class="contact-form quote-form" id="b2b-form" data-title="Cerere ofertă pentru firme">
+            <h3>Cere o ofertă pentru firma ta</h3>
+            <p class="form-intro">Spune-ne câteva detalii și te contactăm cu o ofertă personalizată.</p>
+            <label>Numele firmei<input type="text" name="firma" data-label="Firma" autocomplete="organization" required></label>
+            <div class="form-row">
+              <label>Persoană de contact<input type="text" name="persoana" data-label="Persoană de contact" autocomplete="name" required></label>
+              <label>Telefon<input type="tel" name="telefon" data-label="Telefon" autocomplete="tel" required></label>
+            </div>
+            <div class="form-row">
+              <label>Tipul afacerii
+                <select name="tip" data-label="Tipul afacerii" required>
+                  <option value="">Alege…</option>
+                  <option>Magazin / alimentară</option>
+                  <option>Cantină</option>
+                  <option>Hotel / pensiune</option>
+                  <option>After-school / grădiniță</option>
+                  <option>Restaurant / cafenea</option>
+                  <option>Altul</option>
+                </select>
+              </label>
+              <label>Localitatea<input type="text" name="localitate" data-label="Localitate" required></label>
+            </div>
+            <label>Produse și cantități estimate<textarea name="produse" data-label="Produse și cantități" rows="4" placeholder="Ex: 80 pâini albe și 30 integrale pe zi, cornuri pentru micul dejun, livrare luni – vineri…" required></textarea></label>
+            <div class="form-actions">
+              <button type="submit" class="btn" data-send="whatsapp">Trimite pe WhatsApp</button>
+              <button type="submit" class="btn btn-outline" data-send="email">Trimite pe e-mail</button>
+            </div>
+            <p class="form-note">Cererea se deschide în WhatsApp sau în aplicația ta de e-mail. Folosim datele doar pentru a-ți răspunde, conform <a href="politica-de-confidentialitate.html">Politicii de confidențialitate</a>.</p>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -301,17 +361,17 @@
         <div>
           <p class="eyebrow">Despre noi</p>
           <h2>Povestea noastră</h2>
-          <p>Povestea Braldico a început în 1997, cu un cuptor, câteva rețete moștenite și dorința de a aduce pe masa oamenilor pâine adevărată. De atunci am crescut, dar am rămas fideli aceluiași principiu: totul se face cu mâna, cu timp și cu suflet.</p>
-          <p>Astăzi, brutăria, patiseria și cofetăria noastră pregătesc în fiecare zi produse proaspete pentru micul dejun, pentru masa de prânz și pentru cele mai dulci momente ale familiei tale.</p>
+          <p>Braldico a pornit în 1997 la Tărlungeni, cu dorința de a aduce pe masa oamenilor pâine bună, făcută cu grijă. De atunci am crescut constant: astăzi producem zilnic aproximativ 4 tone de pâine, alături de produse de patiserie și cofetărie, cu o echipă de aproximativ 60 de oameni.</p>
+          <p>Livrăm în fiecare zi, cu mașinile noastre, către magazine, cantine, hoteluri și after-school-uri din județul Brașov și din zona Întorsura Buzăului. Iar în cele 4 magazine Braldico din Tărlungeni și Brașov te așteptăm cu produse proaspete, torturi la comandă și Candy Bar pentru evenimente.</p>
         </div>
         <div class="about-card">
           <svg class="wheat" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 60V18M32 24c-6-2-9-7-9-12 6 1 9 6 9 12zm0 0c6-2 9-7 9-12-6 1-9 6-9 12zm0 10c-6-2-9-7-9-12 6 1 9 6 9 12zm0 0c6-2 9-7 9-12-6 1-9 6-9 12zm0 10c-6-2-9-7-9-12 6 1 9 6 9 12zm0 0c6-2 9-7 9-12-6 1-9 6-9 12zM32 18c-2-4-2-9 0-13 2 4 2 9 0 13z"/></svg>
           <h3>Ce ne definește</h3>
           <ul class="checklist">
-            <li>Aluaturi lăsate să crească în ritmul lor</li>
-            <li>Făină, unt, ouă și fructe de calitate</li>
-            <li>Rețete tradiționale, păstrate cu grijă</li>
-            <li>Produse coapte proaspăt, în fiecare zi</li>
+            <li>Producție proprie, zilnică, în Tărlungeni</li>
+            <li>Certificare ISO și calitate constantă</li>
+            <li>Flotă proprie de livrare, de luni până sâmbătă</li>
+            <li>Rețete tradiționale, păstrate cu grijă din 1997</li>
           </ul>
         </div>
       </div>
@@ -360,6 +420,45 @@
             </div>
           </article>
         </div>
+        <div class="b2b-note">
+          <p><strong>Ai o afacere?</strong> Pentru magazine, cantine, hoteluri și after-school-uri îți trimitem lista completă de produse și o ofertă adaptată cantităților tale.</p>
+          <a href="#parteneri" class="btn">Cere oferta pentru firme</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="cum-comanzi" class="section section-order">
+      <div class="scallop scallop-top scallop-cream" aria-hidden="true"></div>
+      <div class="container">
+        <p class="eyebrow center">Pentru acasă și evenimente</p>
+        <h2 class="center">Cum comanzi: ne suni, ne scrii sau treci pe la noi</h2>
+        <p class="center intro">Nu vindem online — preferăm să vorbim cu tine, ca fiecare comandă să iasă exact așa cum ți-o dorești. Alege varianta cea mai comodă:</p>
+        <div class="order-ways">
+          <a class="order-way" href="tel:+40722498939">
+            <span class="order-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></span>
+            <h3>Sună-ne</h3>
+            <strong>0722 498 939</strong>
+            <span class="order-sub">Luni – Vineri, 08:00 – 17:00, sau direct la <span class="u">magazinul cel mai apropiat</span></span>
+          </a>
+          <a class="order-way order-way-wa" href="https://wa.me/40722498939?text=Bun%C4%83%20ziua%21%20A%C8%99%20dori%20s%C4%83%20plasez%20o%20comand%C4%83." target="_blank" rel="noopener">
+            <span class="order-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12z"/><path d="M9 10h6M9 13.5h4"/></svg></span>
+            <h3>Scrie-ne pe WhatsApp</h3>
+            <strong>0722 498 939</strong>
+            <span class="order-sub">Trimite-ne și o poză cu tortul dorit</span>
+          </a>
+          <a class="order-way" href="#magazine">
+            <span class="order-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v10h16V10M3 10l2-6h14l2 6M3 10c0 1.7 1.3 3 3 3s3-1.3 3-3c0 1.7 1.3 3 3 3s3-1.3 3-3c0 1.7 1.3 3 3 3s3-1.3 3-3M10 20v-5h4v5"/></svg></span>
+            <h3>Vino în magazin</h3>
+            <strong>4 locații</strong>
+            <span class="order-sub">În Tărlungeni și Brașov — vezi adresele și programul</span>
+          </a>
+        </div>
+        <ul class="order-rules">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span><strong>Torturile</strong> se comandă cu minimum <strong>2 zile</strong> înainte</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M15 9.5c0-1.4-1.3-2-3-2s-3 .8-3 2.2c0 3 6 1.6 6 4.6 0 1.4-1.3 2.2-3 2.2s-3-.7-3-2"/></svg><span>Comanda se confirmă după plata unui <strong>avans</strong></span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><span><strong>Ridici din magazin</strong> sau <strong>îți livrăm</strong> comanda</span></li>
+        </ul>
+        <p class="center order-form-link">Preferi să ne trimiți detaliile în scris? <a href="#contact" class="inline-link">Completează cererea de ofertă</a></p>
       </div>
     </section>
 
@@ -475,8 +574,20 @@
       <div class="scallop scallop-top" aria-hidden="true"></div>
       <div class="container faq">
         <p class="eyebrow center">Întrebări frecvente</p>
-        <h2 class="center">Înainte să comanzi</h2>
+        <h2 class="center">Răspunsuri rapide</h2>
         <div class="faq-list">
+          <details class="faq-item">
+            <summary>Livrați produse și către firme?</summary>
+            <p>Da. Aprovizionăm zilnic magazine, cantine, hoteluri și after-school-uri cu pâine, patiserie și cofetărie din producția proprie. Completează cererea de ofertă pentru firme sau sună-ne la 0722 498 939.</p>
+          </details>
+          <details class="faq-item">
+            <summary>În ce zone livrați către firme?</summary>
+            <p>Livrăm în județul Brașov și în zona Întorsura Buzăului (județul Covasna), zilnic, de luni până sâmbătă, cu mașinile noastre.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Care este comanda minimă pentru firme?</summary>
+            <p>Nu avem o comandă minimă fixă: cantitățile, frecvența livrărilor și condițiile se stabilesc împreună, în funcție de nevoile fiecărui partener.</p>
+          </details>
           <details class="faq-item">
             <summary>Cum pot plasa o comandă?</summary>
             <p>Ne poți suna sau scrie pe WhatsApp la 0722 498 939, ne poți trimite un e-mail la office@braldico.ro sau poți veni direct în oricare dintre magazinele noastre. Nu preluăm comenzi și plăți online prin site.</p>
