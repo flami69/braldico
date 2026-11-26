@@ -462,7 +462,7 @@ h3 { font-weight: 800; }
 
 /* Footer */
 .footer { background: var(--choco-900); color: #c9ab86; padding: 56px 0 0; font-size: .92rem; border-top: 2px solid var(--gold-dark); }
-.footer-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1.2fr 1fr; gap: 32px; }
+.footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1.2fr 1fr; gap: 36px; }
 .footer h4 { color: var(--gold); text-transform: uppercase; letter-spacing: .12em; font-size: .78rem; margin-bottom: 14px; }
 .footer p { margin-top: 14px; }
 .footer-links { list-style: none; display: grid; gap: 8px; }
