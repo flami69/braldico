@@ -6,6 +6,8 @@ Site de prezentare pentru Braldico (brutărie, patiserie, cofetărie — din 199
 
 - `index.html` — pagina principală (clienți persoane fizice)
 - `pentru-firme.html` — pagina pentru clienți firme (magazine, cantine, hoteluri, after-school-uri)
+- `articole.html` + 5 ghiduri (`brutarie-brasov.html`, `furnizor-paine-firme-brasov.html`, `patiserie-cofetarie-brasov.html`, `torturi-la-comanda-brasov.html`, `candy-bar-evenimente-brasov.html`) — articole SEO
+- `sitemap.xml`, `robots.txt`, `llms.txt` — pentru motoarele de căutare și asistenții AI (adresele folosesc `flami69.github.io/braldico`; se schimbă la conectarea domeniului braldico.ro)
 - `styles.css` — stiluri
 - `script.js` — meniu mobil, formular de contact și newsletter
 - `supabase/schema.sql` — tabela Supabase pentru abonații la newsletter

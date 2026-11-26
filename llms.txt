@@ -1,0 +1,23 @@
+# Braldico
+
+> Braldico (BRALDICO S.R.L.) este o brutărie, patiserie și cofetărie din județul Brașov, România, care produce pâine din 1997 la Tărlungeni. Produce aproximativ 4 tone de pâine pe zi, are producția certificată ISO, vinde în 4 magazine proprii și livrează zilnic către firme.
+
+## Date esențiale
+- Activitate: producție de pâine, patiserie și cofetărie; torturi la comandă; Candy Bar pentru evenimente
+- Fondată: 1997, Tărlungeni, județul Brașov
+- Capacitate: aproximativ 4 tone de pâine pe zi
+- Certificare: ISO
+- Magazine: Tărlungeni (Strada Principală 300); Brașov: Bloc D16, Strada Privighetorii 3; Strada Graurului 15; Str. Olteț 13
+- Clienți firme: magazine, cantine, hoteluri, after-school-uri
+- Livrare către firme: județul Brașov și Întorsura Buzăului (jud. Covasna), luni – sâmbătă, cu mașini proprii, fără comandă minimă fixă
+- Comenzi: telefon și WhatsApp 0722 498 939, e-mail office@braldico.ro; nu există magazin online
+- Torturi: se comandă cu minimum 2 zile înainte; comanda se confirmă cu avans; ridicare din magazin sau livrare
+
+## Pagini
+- [Pagina principală](https://flami69.github.io/braldico/): produse, cum comanzi, magazine, contact
+- [Pentru firme](https://flami69.github.io/braldico/pentru-firme.html): livrare de pâine către firme, cerere de ofertă
+- [Brutărie în Brașov](https://flami69.github.io/braldico/brutarie-brasov.html): Cauți o brutărie în Brașov? Braldico coace pâine proaspătă în fiecare zi din 1997, la Tărlungeni. Vezi cele 4 magazine din Brașov și Tărlungeni, programul și cum comanzi.
+- [Furnizor de pâine pentru firme](https://flami69.github.io/braldico/furnizor-paine-firme-brasov.html): Furnizor de pâine pentru magazine, cantine, hoteluri și after-school-uri din județul Brașov: aproximativ 4 tone pe zi, producție certificată ISO, livrare zilnică luni–sâmbătă. Cere ofertă.
+- [Patiserie și cofetărie](https://flami69.github.io/braldico/patiserie-cofetarie-brasov.html): Care e diferența dintre patiserie și cofetărie? Află ce produse găsești la Braldico, patiserie și cofetărie din Brașov din 1997, unde le cumperi și cum comanzi platouri sau torturi.
+- [Torturi la comandă](https://flami69.github.io/braldico/torturi-la-comanda-brasov.html): Vrei un tort la comandă în Brașov? Află cu cât timp înainte comanzi, ce informații pregătești, ce mărime îți trebuie și cum funcționează avansul și livrarea la Braldico.
+- [Candy Bar pentru evenimente](https://flami69.github.io/braldico/candy-bar-evenimente-brasov.html): Ce este un Candy Bar, ce include și câte dulciuri îți trebuie? Ghid pentru nunți, botezuri și zile de naștere în Brașov, de la Braldico — cofetărie din 1997. Cere ofertă.
