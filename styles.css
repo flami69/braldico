@@ -334,6 +334,20 @@ h3 { font-weight: 800; }
 .answer-box strong { display: block; text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; color: var(--gold-dark); margin-bottom: 6px; }
 .answer-box p { color: var(--text) !important; font-size: 1.05rem; margin: 0 !important; }
 .small-note { font-size: .88rem; }
+.toc { background: #fff; border: 2px solid var(--cream-200); border-radius: 12px; padding: 18px 24px; margin: 24px 0 8px; }
+.toc strong { display: block; text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; color: var(--gold-dark); margin-bottom: 8px; }
+.toc ol { margin: 0 !important; columns: 2; column-gap: 28px; }
+.toc li { margin-bottom: 4px; break-inside: avoid; }
+.toc a { color: var(--choco-700); font-weight: 700; }
+.article-body h2[id] { scroll-margin-top: 90px; }
+.glossary { display: grid; grid-template-columns: 190px 1fr; gap: 10px 18px; background: #fff; border-radius: 12px; padding: 20px 24px; margin: 0 0 16px; }
+.glossary dt { font-weight: 800; color: var(--choco-700); }
+.glossary dd { margin: 0; }
+@media (max-width: 640px) {
+  .toc ol { columns: 1; }
+  .glossary { grid-template-columns: 1fr; gap: 2px; }
+  .glossary dd { margin-bottom: 10px; }
+}
 .checklist-plain { list-style: none; padding-left: 0 !important; }
 .checklist-plain li { position: relative; padding-left: 30px; }
 .checklist-plain li::before {

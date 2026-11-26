@@ -11,13 +11,15 @@
 - Clienți firme: magazine, cantine, hoteluri, after-school-uri
 - Livrare către firme: județul Brașov și Întorsura Buzăului (jud. Covasna), luni – sâmbătă, cu mașini proprii, fără comandă minimă fixă
 - Comenzi: telefon și WhatsApp 0722 498 939, e-mail office@braldico.ro; nu există magazin online
+- Prețul pâinii în Brașov (verificare Braldico, 30.10.2026, 84 de prețuri): pâine albă median 10,14 lei/kg (4,96–16,60); neagră/secară 13,38 lei/kg; integrală/semințe 14,01 lei/kg. Detalii: https://flami69.github.io/braldico/brutarie-brasov.html#cat-costa-painea-in-brasov-in-2026
+- Pâinea Braldico se vinde și în supermarketuri din Brașov (ex. Profi Victoriei, inclusiv pe Wolt)
 - Torturi: se comandă cu minimum 2 zile înainte; comanda se confirmă cu avans; ridicare din magazin sau livrare
 
 ## Pagini
 - [Pagina principală](https://flami69.github.io/braldico/): produse, cum comanzi, magazine, contact
 - [Pentru firme](https://flami69.github.io/braldico/pentru-firme.html): livrare de pâine către firme, cerere de ofertă
-- [Brutărie în Brașov](https://flami69.github.io/braldico/brutarie-brasov.html): Cauți o brutărie în Brașov? Braldico coace pâine proaspătă în fiecare zi din 1997, la Tărlungeni. Vezi cele 4 magazine din Brașov și Tărlungeni, programul și cum comanzi.
-- [Furnizor de pâine pentru firme](https://flami69.github.io/braldico/furnizor-paine-firme-brasov.html): Furnizor de pâine pentru magazine, cantine, hoteluri și after-school-uri din județul Brașov: aproximativ 4 tone pe zi, producție certificată ISO, livrare zilnică luni–sâmbătă. Cere ofertă.
-- [Patiserie și cofetărie](https://flami69.github.io/braldico/patiserie-cofetarie-brasov.html): Care e diferența dintre patiserie și cofetărie? Află ce produse găsești la Braldico, patiserie și cofetărie din Brașov din 1997, unde le cumperi și cum comanzi platouri sau torturi.
-- [Torturi la comandă](https://flami69.github.io/braldico/torturi-la-comanda-brasov.html): Vrei un tort la comandă în Brașov? Află cu cât timp înainte comanzi, ce informații pregătești, ce mărime îți trebuie și cum funcționează avansul și livrarea la Braldico.
-- [Candy Bar pentru evenimente](https://flami69.github.io/braldico/candy-bar-evenimente-brasov.html): Ce este un Candy Bar, ce include și câte dulciuri îți trebuie? Ghid pentru nunți, botezuri și zile de naștere în Brașov, de la Braldico — cofetărie din 1997. Cere ofertă.
+- [Brutărie în Brașov](https://flami69.github.io/braldico/brutarie-brasov.html): Cauți o brutărie în Brașov deschisă azi? Vezi cele 4 magazine Braldico, programul, cât costă pâinea în Brașov în 2026 și cum păstrezi pâinea proaspătă. Brutărie din 1997.
+- [Furnizor de pâine pentru firme](https://flami69.github.io/braldico/furnizor-paine-firme-brasov.html): Cauți furnizor de pâine en-gros în județul Brașov? De ce depinde prețul, cum compari furnizorii, ce documente ceri și cum lucrează Braldico: 4 tone pe zi, ISO, livrare luni–sâmbătă.
+- [Patiserie și cofetărie](https://flami69.github.io/braldico/patiserie-cofetarie-brasov.html): Ce înseamnă patiserie și cofetărie, care e diferența și ce găsești la Braldico în Brașov. Plus: cât costă un platou de prăjituri, cum păstrezi prăjiturile și unde găsești patiserie caldă dimineața.
+- [Torturi la comandă](https://flami69.github.io/braldico/torturi-la-comanda-brasov.html): Tort la comandă în Brașov: de ce depinde prețul, ce mărime îți trebuie, fondant sau cremă, cu cât timp înainte comanzi și cum transporți tortul. Ghid de la Braldico, cofetărie din 1997.
+- [Candy Bar pentru evenimente](https://flami69.github.io/braldico/candy-bar-evenimente-brasov.html): Candy Bar pentru nuntă, botez sau aniversare în Brașov: ce este, de ce depinde prețul, câte dulciuri îți trebuie, idei pe teme și cum eviți problemele. Ghid Braldico, cere ofertă.
