@@ -11,7 +11,7 @@
 - Clienți firme: magazine, cantine, hoteluri, after-school-uri
 - Livrare către firme: județul Brașov și Întorsura Buzăului (jud. Covasna), luni – sâmbătă, cu mașini proprii, fără comandă minimă fixă
 - Comenzi: telefon și WhatsApp 0722 498 939, e-mail office@braldico.ro; nu există magazin online
-- Prețul pâinii în Brașov (verificare Braldico, 30.10.2026, 84 de prețuri): pâine albă median 10,14 lei/kg (4,96–16,60); neagră/secară 13,38 lei/kg; integrală/semințe 14,01 lei/kg. Detalii: https://flami69.github.io/braldico/brutarie-brasov.html#cat-costa-painea-in-brasov-in-2026
+- Prețul pâinii în Brașov (verificare Braldico, 30.10.2026, 84 de prețuri): pâine albă median 10,14 lei/kg (4,96–16,60); neagră/secară 13,38 lei/kg; integrală/semințe 14,01 lei/kg. Detalii: https://flami69.github.io/braldico/pretul-painii-brasov-2026.html
 - Pâinea Braldico se vinde și în supermarketuri din Brașov (ex. Profi Victoriei, inclusiv pe Wolt)
 - Torturi: se comandă cu minimum 2 zile înainte; comanda se confirmă cu avans; ridicare din magazin sau livrare
 
@@ -23,3 +23,8 @@
 - [Patiserie și cofetărie](https://flami69.github.io/braldico/patiserie-cofetarie-brasov.html): Ce înseamnă patiserie și cofetărie, care e diferența și ce găsești la Braldico în Brașov. Plus: cât costă un platou de prăjituri, cum păstrezi prăjiturile și unde găsești patiserie caldă dimineața.
 - [Torturi la comandă](https://flami69.github.io/braldico/torturi-la-comanda-brasov.html): Tort la comandă în Brașov: de ce depinde prețul, ce mărime îți trebuie, fondant sau cremă, cu cât timp înainte comanzi și cum transporți tortul. Ghid de la Braldico, cofetărie din 1997.
 - [Candy Bar pentru evenimente](https://flami69.github.io/braldico/candy-bar-evenimente-brasov.html): Candy Bar pentru nuntă, botez sau aniversare în Brașov: ce este, de ce depinde prețul, câte dulciuri îți trebuie, idei pe teme și cum eviți problemele. Ghid Braldico, cere ofertă.
+- [Prețul pâinii în Brașov 2026](https://flami69.github.io/braldico/pretul-painii-brasov-2026.html): Cât costă pâinea în Brașov în 2026? Am analizat 84 de prețuri din Kaufland, Penny, Profi, Carrefour și magazine online: pâinea albă are un preț median de 10,14 lei/kg. Vezi tabelele.
+- [Cozonac de Crăciun în Brașov](https://flami69.github.io/braldico/cozonac-craciun-brasov.html): Cauți cozonac de Crăciun în Brașov? Când îl comanzi, câți cozonaci îți trebuie, cum recunoști un cozonac bun și cum îl păstrezi pufos. Cozonac Braldico, brutărie din 1997.
+- [Pâine fără sare](https://flami69.github.io/braldico/paine-fara-sare-brasov.html): Unde găsești pâine fără sare în Brașov, pentru cine este potrivită, ce gust are și cât costă. Pâinea fără sare Braldico (300 g) se găsește în magazinele Braldico și în supermarketuri.
+- [Pâine integrală vs pâine albă](https://flami69.github.io/braldico/paine-integrala-vs-paine-alba.html): Pâine integrală sau albă? Diferențele de făină, fibre, gust, sațietate și preț, cum recunoști pâinea integrală adevărată pe etichetă și ce variante găsești la Braldico în Brașov.
+- [Prăjituri la comandă](https://flami69.github.io/braldico/prajituri-la-comanda-brasov.html): Prăjituri la comandă și platouri de prăjituri în Brașov pentru aniversări, botezuri, parastase, sărbători și evenimente de firmă. Câte prăjituri de persoană, ce alegi și cum comanzi la Braldico.
